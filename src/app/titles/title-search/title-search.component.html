@@ -1,0 +1,12 @@
+<div>
+    <label for="primaryTitle">primaryTitle</label>
+    <input type="text" id="primaryTitle" [(ngModel)]="primaryTitle">
+
+    <label for="originalTitle">originalTitle</label>
+    <input type="text" id="originalTitle" [(ngModel)]="originalTitle">
+
+    <label for="startYear">startYear</label>
+    <input type="text" id="startYear" [(ngModel)]="startYear">
+
+    <button (click)="service.getTitles(primaryTitle,originalTitle,startYear)">Search</button>
+</div>

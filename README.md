@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
+## Launch Json Server for dummy data
+
+Run `json-server --watch title.basics.json ` to start a json server. Navigate to `http://localhost:3000/titles` to check the json data.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

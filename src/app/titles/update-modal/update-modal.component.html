@@ -1,0 +1,32 @@
+<h2 mat-dialog-title>{{title.originalTitle}}</h2>
+
+<mat-dialog-content fxLayout="column">
+    <mat-form-field> 
+        <input matInput placeholder="primaryTitle" value="{{title.primaryTitle}}" #titleRef>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Genre" [value]="title.genres" #genreRef>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="startYear" value="{{title.startYear}}" #yearRef>
+    </mat-form-field>
+</mat-dialog-content>
+
+<div class="actions" fxLayout="row" fxLayoutAlign="space-between" fxLayout.xs="column">
+    <div>
+        <mat-dialog-actions>
+            <button class="mat-raised-button update" (click)="update(title,titleRef,genreRef,yearRef)">
+                <!-- <mat-icon>update</mat-icon> -->
+                <span>Update</span>
+            </button>
+        </mat-dialog-actions>
+    </div>
+    <div>
+        <mat-dialog-actions>
+            <button class="mat-raised-button close" (click)="close()">
+                <!-- <mat-icon>close</mat-icon> -->
+                <span>Close</span>
+            </button>
+        </mat-dialog-actions>
+    </div>
+</div>

@@ -1,12 +1,15 @@
-<div>
-    <label for="primaryTitle">primaryTitle</label>
-    <input type="text" id="primaryTitle" [(ngModel)]="primaryTitle">
-
-    <label for="originalTitle">originalTitle</label>
-    <input type="text" id="originalTitle" [(ngModel)]="originalTitle">
-
-    <label for="startYear">startYear</label>
-    <input type="text" id="startYear" [(ngModel)]="startYear">
-
-    <button (click)="service.getTitles(primaryTitle,originalTitle,startYear)">Search</button>
+<div fxLayout="row" fxLayoutGap = "10px" fxLayout.xs="column" >
+    <mat-form-field> 
+        <input matInput [(ngModel)]="primaryTitle" placeholder="primaryTitle">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [(ngModel)]="originalTitle" placeholder="originalTitle">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [(ngModel)]="startYear" placeholder="startYear">
+    </mat-form-field>
+    <button mat-button (click)="service.getTitles(primaryTitle,originalTitle,startYear)" class="btn-search">
+        <mat-icon>search</mat-icon>
+        <span>Search</span>
+    </button>
 </div>

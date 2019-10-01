@@ -2,10 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
+## Get started
+
+### Clone the repo
+
+```shell
+git clone https://github.com/errajai/FilmSearch
+cd cd FilmSearch
+```
+
+### Install npm packages
+
+Install the `npm` packages described in the `package.json` and verify that it works:
+
+```shell
+npm install
+```
 ## Launch Json Server for dummy data
 
 Run `json-server --watch title.basics.json ` to start a json server. Navigate to `http://localhost:3000/titles` to check the json data.
-
 
 ## Development server
 

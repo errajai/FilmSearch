@@ -18,6 +18,15 @@ Install the `npm` packages described in the `package.json` and verify that it wo
 ```shell
 npm install
 ```
+
+### Install json-server package
+
+Install json-server package:
+
+```shell
+npm install -g json-server
+```
+
 ## Launch Json Server for dummy data
 
 Run `json-server --watch title.basics.json ` to start a json server. Navigate to `http://localhost:3000/titles` to check the json data.

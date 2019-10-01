@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ```shell
 git clone https://github.com/errajai/FilmSearch
-cd cd FilmSearch
+cd FilmSearch
 ```
 
 ### Install npm packages
